@@ -1,0 +1,39 @@
+<div class="row mt-4">
+    <div class="col-12 col-md-6 mt-2">
+        <div class="card shadow rounded">
+            <div class="card-body">
+                <app-form />
+            </div>
+        </div>      
+    </div>  
+    <div class="col-12 col-md-6 mt-2">
+        <div class="card shadow rounded">
+            <div class="card-body alto" >
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Cola 1</h6>
+                            </div>
+                        </div>
+                        <div class="row"  *ngFor="let cola of cola1">
+                           <app-cola [cola]="cola" />
+                        </div>
+                        
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Cola 2</h6>
+                            </div>
+                        </div>
+                        <div class="row" *ngFor="let cola of cola2">
+                            <app-cola [cola]="cola" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

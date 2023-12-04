@@ -1,0 +1,18 @@
+
+    <div class="mb-3">
+      <h6>
+        Please complit the form
+      </h6>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">ID</label>
+      <input  class="form-control" [(ngModel)]="id"  type="number" required>
+    </div>
+    <div class="mb-3">
+      <label  for="exampleFormControlTextarea1" class="form-label">Name</label>
+      <input class="form-control" [(ngModel)]="name" value={{name}} required
+        (keyup.enter)="sendToCola()">
+      
+    </div>
+    <button type="button" class="btn btn-primary" (click)="sendToCola()">Save</button>
+
